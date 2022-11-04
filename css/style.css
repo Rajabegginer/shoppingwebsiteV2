@@ -1,0 +1,515 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:  'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 90%;
+    margin: auto;
+}
+
+.sidebar {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 20%;
+    background-color: dodgerblue;
+    color: white;
+    height: 100%;
+    position:fixed;
+    overflow: auto;
+    margin: 0 8px;
+    z-index: 3;
+}
+
+.sidebar li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 4px 16px;
+}
+
+.sidenav li a {
+    color:white;
+    margin: 4px 16px;
+}
+
+.sidebar li a:hover {
+    background-color:white;
+    color: black;
+}
+
+.sidebar .sidenav {
+    padding: 64px 0;
+}
+
+.sidenav {
+    font-size: 18px;
+   
+    
+}
+
+
+
+
+
+
+.sidebar .logo {
+    padding: 16px;
+}
+
+.sidebar .logo h3 {
+    margin: 10px 0;
+}
+
+.active {
+    background-color: white;
+    color: black !important;
+}
+
+#overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+    display: none;
+}
+
+
+.main-box {
+    display: flex;
+    justify-content: flex-end;
+   
+}
+
+.h-style {
+    color: dodgerblue;
+    font-size: 44px;
+
+}
+
+hr {
+    width: 50px;
+    border: 4px solid dodgerblue;
+    margin: 16px 0;
+    box-sizing: content-box;
+    border-radius: 4px;
+}
+
+.main {
+    width: 76%;
+}
+
+header {
+    
+    
+    padding: 0 16px;
+    
+}
+
+header h1 {
+    margin: 24px 0;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+.main-img .text {
+    position: absolute;
+    top: 122px;
+ color: white;
+    padding: 24px 58px;
+   
+}
+
+
+.h-primary {
+    font-size: 64px;
+}
+
+.h-secondary {
+    font-size: 36px;
+    
+}
+
+.text h1 {
+    margin: 10px 0;
+    
+
+}
+
+.text p {
+    margin: 26px 0;
+}
+
+.btn {
+    background-color: dodgerblue;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+
+}
+
+.text p a:hover {
+    background-color:#ccc;
+    color: black;
+}
+
+.img-fluid {
+    width: 100%;
+}
+
+.img-card {
+    
+    padding: 0 16px;
+    width: 23%;
+    margin: 4px;
+    border: 2px solid dodgerblue;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.img-card p {
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.img-card img {
+    max-width: 100%;
+    height: 256px;
+}
+
+.items {
+    margin: 16px 8px;
+    color: #757575;
+} 
+
+#contact {
+  
+    padding: 34px;
+    margin: 8px 0;
+    margin-bottom: 0;
+    
+}
+
+#contact form {
+    
+    width: 100%;
+    margin: 16px 0;
+    
+   
+}
+
+
+#contact form input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 8px;
+    border:1px solid #ccc;
+    
+}
+
+#contact h1 {
+    
+margin: 16px 0;
+
+}
+
+
+
+
+#contact form input[type=submit]:hover {
+background-color:#ccc ;
+color: black;
+}
+#contact form input[type=submit] {
+    padding: 16px 24px;
+    margin: auto;
+    cursor: pointer;
+    color: white;
+    background-color: dodgerblue;
+    display: block;
+    border: none;
+    
+    
+}
+
+.about-container {
+    margin: 0 16px;
+}
+
+.about-container h1 {
+   margin-top: 24px;
+   padding-top: 8px;
+}
+
+
+
+.about-box .about-img {
+    max-width: 300px;
+    
+    float: left;
+    margin: 8px;
+    margin-right: 24px;
+    
+
+    
+}
+
+.about-box {
+  
+    margin: 16px 0;
+}
+
+.about-box hr {
+    width: 100%;
+    border: 4px solid dodgerblue;
+    border-radius: 4px;
+    margin: 64px 0;
+}
+
+.right {
+    float: right !important;
+    margin-left: 24px !important;
+    margin-right: 8px !important;
+}
+
+.about-box .text {
+    padding: 8px;
+    text-align: justify;
+}
+
+
+.about-box .about-img img {
+    width: 100%;
+    height: 400px;
+    border-radius: 12px;
+    border: 4px solid dodgerblue;
+    border-radius: 24px;
+    
+}
+
+.clear-fix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    padding-top: 64px;
+    
+   
+    
+    
+}
+.footer-box {
+    display: flex;
+    justify-content: center;
+    border: 2px solid dodgerblue;
+    border-radius: 64px;
+    
+}
+
+footer .footer-box .info, .about {
+    width: 40%;
+    padding: 64px 0;
+    
+}
+
+.f-secondary {
+    font-size: 12px;
+    
+    line-height: 1.5;
+    color: dodgerblue;
+    }
+
+
+    .f-primary {
+    font-size: 20px;
+    line-height: 1.5;
+    color: dodgerblue;
+    }  
+    
+    
+    footer .info h4, p {
+        margin: 12px 0;
+    }  
+
+
+
+footer .about a {
+    color: dodgerblue;
+}
+
+footer .about p, h4 {
+    margin: 12px 0;
+}
+
+
+footer h2 {
+    text-align: center;
+    padding: 24px;
+    padding-bottom: 64px;
+    margin-top: 64px;
+    background-color: #f1f1f1;
+}
+
+
+
+.menu {
+    background-color: dodgerblue;
+    padding: 24px;
+    color: white;
+    display: none;
+   
+   
+   
+   
+}
+
+
+
+
+
+.ham-line {
+    width: 24px;
+    margin: 4px;
+    height: 4px;
+    background-color: white;
+}
+
+#ham1 {
+     border: none;
+     background-color: dodgerblue;
+     float: right;
+    
+    
+    
+     
+    
+}
+
+#ham2 {
+    display: none;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: dodgerblue;
+    text-align: center;
+    padding-top: 8px;
+    display: none;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+
+
+@media only screen and (max-width:900px) {
+    
+    body {
+        width: 100%;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .sidebar {
+        display: none;
+        background-color: dodgerblue;
+        margin: 0;
+        z-index: 1;
+        top: 0;
+        width: 40%;
+    }
+
+    .main-box {
+        justify-content: center;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .main-img .text {
+        top: 188px;
+    }
+
+    .img-card {
+        width: 32%;
+    }
+
+  
+}
+
+
+@media only screen and (max-width:600px) {
+    .img-card {
+        width: 47%;
+    }
+
+    .sidebar {
+        width: 50%;
+    }
+
+    .main-img .text .h-secondary {
+        font-size: 18px;
+    }
+    .main-img .text h1 {
+        font-size: 36px;
+    }
+
+    .btn {
+        font-size: 12px;
+    }
+
+    input[type=submit] {
+        font-size: 8px;
+    }
+
+    .about-box .about-img, .right {
+        float: none !important;
+        margin: 8px !important;
+    }
+
+    .about-box .about-img {
+        max-width: 100%;
+    }
+
+    .about-box .about-img img {
+        height: auto;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
